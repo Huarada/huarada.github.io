@@ -27,11 +27,10 @@ nav {
   align-items: center;
   padding: 1rem 2rem;
   background: #f8f8f8;
-  position: sticky;
+  position: relative; /* necessário para posicionamento absoluto interno */
   top: 0;
   z-index: 1000;
 }
-
 nav .logo {
   display: flex;
   align-items: center;
@@ -60,16 +59,16 @@ nav .menu a {
 }
 
 /* Botão hambúrguer oculto por padrão */
+
 .hamburger {
   display: none;
   font-size: 1.8rem;
   background: none;
   border: none;
   cursor: pointer;
-  margin-left: auto;
-  align-self: center;
-  padding: 0;
-  
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
 }
 
 header {
@@ -218,6 +217,7 @@ footer {
 }
 
 /* Responsividade e Menu Hamburguer */
+/* Responsividade e Menu Hamburguer */
 @media (max-width: 768px) {
   header {
     flex-direction: column;
@@ -228,13 +228,27 @@ footer {
     font-size: 1.4rem;
   }
 
-  nav {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: #f8f8f8;
+  position: sticky; /* Fica fixo no topo */
+  top: 0;
+  z-index: 1000;
+}
 
   .hamburger {
     display: block;
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    cursor: pointer;
   }
 
   nav .menu {
@@ -253,6 +267,7 @@ footer {
     padding: 0.5rem 0;
   }
 }
+
 
   </style>
 </head>
