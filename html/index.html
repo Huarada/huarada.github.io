@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lucas Harada - Portfólio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; scroll-behavior: smooth; }
+    body { font-family: 'Roboto', sans-serif; background: #fff; color: #333; line-height: 1.6; }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background: #f8f8f8;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    nav .logo img {
+      height: 40px;
+    }
+    nav .logo span {
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+    nav .menu {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    nav .menu a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+    header {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 2rem;
+      padding: 3rem 2rem;
+      flex-wrap: wrap;
+      background: #fff;
+    }
+    header img.profile {
+      border-radius: 20px;
+      width: 180px;
+      height: 180px;
+      object-fit: cover;
+    }
+    .intro {
+      max-width: 600px;
+      text-align: left;
+    }
+    .intro h1 {
+      font-size: 1.8rem;
+      margin-bottom: 1rem;
+    }
+    .intro p {
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+    section {
+      padding: 2rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+        .experiencias {
+      background: url('../images/SalesForce_Casadosventos.png') no-repeat center top;
+      background-size: contain;
+      text-align: center;
+      padding: 5rem 1rem 2rem;
+      color: #000;
+      position: relative;
+      height: 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+
+
+    .experiencias h2 {
+      position: absolute;
+      top: 20px;
+      left: 0;
+      right: 0;
+      opacity: 0.3;
+      font-size: 2rem;
+      margin: 0 auto;
+    }
+
+    .experiencias p {
+      background: rgba(255,255,255,0.8);
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+    }
+
+    .logos {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: -100px;
+      position: relative;
+      z-index: 1;
+    }
+    .logos img { height: 60px; }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: #fafafa;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .card img {
+      margin-bottom: 0.5rem;
+      object-fit: contain;
+    }
+
+    /* Aumentar tamanho das imagens de projetos e certificados */
+    #projetos .card img,
+    #certificados .card img {
+      width: 100%;
+      height: 160px;
+    }
+
+    /* Manter tamanho atual em reconhecimentos */
+    #reconhecimentos .card img {
+      width: 120px;
+      height: 120px;
+    }
+    .card h4 { margin-bottom: 0.5rem; }
+    .card p { font-size: 0.9rem; color: #555; }
+    footer {
+      text-align: center;
+      padding: 2rem 0;
+      background: #f8f8f8;
+    }
+    .social-icons a {
+      margin: 0 1rem;
+      display: inline-block;
+    }
+    .social-icons img {
+      height: 32px;
+      width: 32px;
+    }
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+      .intro h1 {
+        font-size: 1.4rem;
+      }
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+      }
+      nav .menu {
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 100%;
+      }
+      nav .menu a {
+        padding: 0.5rem 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <img src="../images/escudoPOLI.png" alt="POLI USP">
+      <span>LUCAS HARADA</span>
+    </div>
+    <div class="menu">
+      <a href="#experiencias">Experiências</a>
+      <a href="#projetos">Projetos</a>
+      <a href="#certificados">Certificados</a>
+      <a href="#reconhecimentos">Reconhecimentos</a>
+      <a href="#contato">Contato</a>
+      <a href="mailto:lucasharada51@gmail.com">Enviar Email</a>
+    </div>
+  </nav>
+
+  <header>
+    <img src="../images/Foto_Lucas_Harada_fundo_branco.png" alt="Lucas Harada" class="profile">
+    <div class="intro">
+      <h1>Estudante de Engenharia Elétrica com ênfase em Sistemas Computacionais e Eletrônica na Escola Politécnica da USP</h1>
+      <p>Experiente em sistema SalesForce, simulações e programação nas linguagens C, C++, Python, VHDL, JAVA e APEX, além de possuir conhecimento avançado em inglês (TOEFL 90).<br>
+      Atuando com foco em planejamento e desenvolvimento, utilizando metodologias Ágeis e buscando constante evolução e atualização tecnológica.<br>
+      Aberto a oportunidades para aplicar conhecimentos e colaborar em soluções inovadoras.</p>
+    </div>
+  </header>
+
+  <section id="experiencias" class="experiencias">
+    <h2>Experiências</h2>
+    <div class="logos">
+    </div>
+    <br>
+  </br>
+    <br>
+    </br>
+
+    <p>Developer Salesforce na Casa dos Ventos S.A</p>
+  </section>
+
+  <section id="projetos">
+    <h3>Projetos Pessoais</h3>
+    <div class="cards">
+      <div class="card">
+        <img src="../images/cartao_credito.png">
+        <h4>análise de cartão de crédito</h4>
+        <p>Python, feito com uso de pandas e matplotlib, para entender comportamento de crédito social.</p>
+      </div>
+      <div class="card">
+        <img src="../images/speller.png">
+        <h4>speller - CS50x</h4>
+        <p>Verificador de ortografia com estrutura de dados hash table, parte do curso CS50x da Harvard.</p>
+      </div>
+      <div class="card">
+        <img src="../images/microelectronics.png">
+        <h4>microprocessador STM32U5</h4>
+        <p>Conectado à Amazon Cloud com sensores, atuadores e leitura via painel IoT.</p>
+      </div>
+      <div class="card">
+        <img src="../images/finance_site.png">
+        <h4>site dinâmico para finanças</h4>
+        <p>Plataforma com API do Yahoo e página criada por HTML + SQLite.</p>
+      </div>
+      <div class="card">
+        <img src="../images/EdgesFilter.png">
+        <h4>Filtro de imagens – CS50x</h4>
+        <p>Processamento de imagem com C e manipulação de matrizes para criar efeitos visuais.</p>
+      </div>
+      <div class="card">
+        <img src="../images/REDENeural.png">
+        <h4>Detecção com Rede Neural</h4>
+        <p>Modelo com CNN para localização e reconhecimento de objetos em imagens.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="certificados" class="certificados">
+    <h3>Certificados</h3>
+    <div class="cards">
+      <div class="card">
+        <img src="../images/certification/cs50.png">          
+        <h4>CS50x – Harvard</h4>
+        <p>Introdução à Ciência da Computação.</p>
+      </div>
+      <div class="card">
+        <img src="../images/certification/michigan_u.png">
+        <h4>Applied Machine Learning – Michigan</h4>
+        <p>Métodos de aprendizado supervisionado.</p>
+      </div>
+      <div class="card">
+        <img src="../images/certification/google_cloud_academy.png">
+        <h4>Google Cloud Foundations</h4>
+        <p>Fundamentos do Google Cloud Computing.</p>
+      </div>
+      <div class="card">
+        <img src="../images/certification/web_developer.png">
+        <h4>Curso Desenvolvedor Web Completo</h4>
+        <p>HTML, CSS, JS, Node.js, React, PHP, MySQL, Javascript </p>
+      </div>
+      <div class="card">
+        <img src="../images/certification/clickup.png">
+        <h4>ClickUp Expert Certificate</h4>
+        <p>Certificação de produtividade, gestão e metodologias Ágeis com ClickUp.</p>
+      </div>
+      <div class="card">
+        <img src="../images/certification/ibm.png">
+        <h4>Python 101 for Data Science – IBM</h4>
+        <p>Fundamentos de Python para ciência de dados.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="reconhecimentos" class="reconhecimentos">
+    <h3>Reconhecimentos</h3>
+    <div class="cards">
+      <div class="card">
+        <h4>Medalha de Bronze - Physics Cup</h4>
+        <img src="../images/medalhas/Physics_cup.png">
+        <p>(2018) Universidade de Talin – Estônia.</p>
+      </div>
+      <div class="card"><h4>Medalhas de Ouro - OBA</h4>
+        <img src="../images/medalhas/oba.png">
+        <p>(2017-2018-2019) medalha de ouro - Olimpíada de Astronomia e Astronáutica.</p>
+      </div>
+      <div class="card"><h4>Olimpíada Brasileira de Física</h4>
+        <img src="../images/medalhas/obf.png">
+        <p>(2016-2017-2019) Medalha de Prata</p>
+      </div>
+      <div class="card"><h4>Olimpíada Paulista de Física</h4>
+        <img src="../images/medalhas/opf.png">
+        <p>(2019) medalha de Bronze <br>
+          (2016) Medalha de Ouro</p>
+      </div>
+      <div class="card"><h4>Olimpíada Brasileira de Robótica</h4>
+        <img src="../images/medalhas/obr.png">
+        <p>(2016) Medalha de Ouro – UNICAMP.</p>
+      </div>
+      <div class="card"><h4>Paulista de Robótica – UNICAMP</h4>
+        <img src="../images/medalhas/unicamp.png">
+        <p>(2016 - 2017) Medalha de Ouro</p>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contato">
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/eng-lucas-harada/" target="_blank"><img src="../images/logos/linkedin.png" alt="LinkedIn"></a>
+      <a href="https://github.com/Huarada" target="_blank"><img src="../images/logos/githubImage.png" alt="GitHub"></a>
+      <a href="https://www.instagram.com/lucas.harada.94?igsh=MTkxdjFrZ2N6bW1qcQ==" target="_blank"><img src="../images/logos/instagram.jpg" alt="Instagram"></a>
+    </div>
+  </footer>
+</body>
+</html>
