@@ -217,7 +217,37 @@ footer {
   width: 32px;
 }
 
-/* Responsividade e Menu Hamburguer */
+/* Aparição suave dos cards */
+.card {
+  will-change: transform, opacity;
+}
+
+.card.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+}
+
+.card.in-view {
+  opacity: 1;
+  transform: translateY(0);
+  transition:
+    opacity 520ms cubic-bezier(.22,.61,.36,1),
+    transform 520ms cubic-bezier(.22,.61,.36,1);
+}
+
+/* Stagger: cada card espera um pouco com base no data-index */
+.card.in-view {
+  transition-delay: var(--stagger, 0ms);
+}
+
+/* Acessibilidade: se o usuário preferir menos movimento, só fade */
+@media (prefers-reduced-motion: reduce) {
+  .card.reveal { transform: none; }
+  .card.in-view {
+    transition: opacity 300ms ease-out;
+  }
+}
+
 /* Responsividade e Menu Hamburguer */
 @media (max-width: 768px) {
   header {
@@ -454,9 +484,37 @@ nav {
   </footer>
 
   <script>
-  function toggleMenu() {
-    document.querySelector('nav .menu').classList.toggle('active');
-  }
-  </script>
+function toggleMenu() {
+  document.querySelector('nav .menu').classList.toggle('active');
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  const cards = Array.from(document.querySelectorAll('.cards .card'));
+
+  // Marca todos como "reveal" e define um atraso de entrada (stagger)
+  cards.forEach((card, i) => {
+    card.classList.add('reveal');
+    // 60ms por card dá ritmo sem parecer lento
+    card.style.setProperty('--stagger', `${Math.min(i * 60, 360)}ms`);
+  });
+
+  // Observa entrada na viewport
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in-view');
+        // opcional: parar de observar depois de aparecer
+        io.unobserve(entry.target);
+      }
+    });
+  }, {
+    root: null,
+    rootMargin: '0px 0px -10% 0px', // dispara um pouco antes do fundo
+    threshold: 0.1
+  });
+
+  cards.forEach(card => io.observe(card));
+});
+</script>
 </body>
 </html>
