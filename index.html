@@ -495,7 +495,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const io = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        // Garante que o estado "reveal" foi pintado antes de transicionar
         requestAnimationFrame(() => {
           entry.target.classList.add('in-view');
           io.unobserve(entry.target);
@@ -508,19 +507,21 @@ document.addEventListener('DOMContentLoaded', () => {
     threshold: 0.1
   });
 
-  // Aguarda 1 frame antes de observar, para pintar o estado .reveal
+  // Aguarda 1 frame antes de observar
   requestAnimationFrame(() => {
     cards.forEach(card => io.observe(card));
   });
 
-  // Fallback: se algo impedir o IO, garante animação para os cards visíveis
+  //Forca animação também no carregamento inicial (para quem já está no viewport)
   setTimeout(() => {
     cards.forEach(card => {
       const rect = card.getBoundingClientRect();
       const vh = window.innerHeight || document.documentElement.clientHeight;
-      if (rect.top < vh * 0.9) card.classList.add('in-view');
+      if (rect.top < vh * 0.9) {
+        card.classList.add('in-view');
+      }
     });
-  }, 500);
+  }, 200); // 200ms de atraso dá tempo do .reveal "pintar"
 });
 </script>
   
