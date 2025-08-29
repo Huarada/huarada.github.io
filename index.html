@@ -7,348 +7,60 @@
   <link rel="icon" type="image/x-icon" href="/images/poliFavicon.ico">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
   <style>
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  scroll-behavior: smooth;
+*{box-sizing:border-box;margin:0;padding:0;scroll-behavior:smooth}
+body{font-family:'Roboto',sans-serif;background:#fff;color:#333;line-height:1.6}
+nav{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;padding:1rem 2rem;background:#f8f8f8;position:relative;top:0;z-index:1000}
+nav .logo{display:flex;align-items:center;gap:.5rem}
+nav .logo img{height:40px}
+nav .logo span{font-weight:bold;font-size:1.2rem}
+nav .menu{display:flex;flex-wrap:wrap;gap:1rem}
+nav .menu a{text-decoration:none;color:#333;font-weight:500}
+.hamburger{display:none;font-size:1.8rem;background:none;border:none;cursor:pointer;position:absolute;top:1rem;right:2rem}
+header{display:flex;flex-direction:row;align-items:center;justify-content:center;gap:2rem;padding:3rem 2rem;flex-wrap:wrap;background:#fff}
+header img.profile{border-radius:20px;width:180px;height:180px;object-fit:cover}
+.intro{max-width:600px;text-align:left}
+.intro h1{font-size:1.8rem;margin-bottom:1rem;color:#003366}
+.intro p{font-size:1rem;line-height:1.6;color:#444}
+section{padding:2rem 1rem;max-width:1000px;margin:auto}
+section h3{margin-bottom:1.5rem;font-size:1.6rem;color:#003366;text-align:center}
+.experiencias{background:url('../images/SalesForce_Casadosventos.png') no-repeat center top;background-size:contain;text-align:center;padding:5rem 1rem 2rem;color:#000;position:relative;height:400px;display:flex;flex-direction:column;justify-content:flex-end}
+.experiencias h2{position:absolute;top:20px;left:0;right:0;opacity:.3;font-size:2rem;margin:0 auto}
+.experiencias p{background:rgba(255,255,255,.8);display:inline-block;padding:.5rem 1rem;border-radius:5px}
+.logos{display:flex;justify-content:center;gap:2rem;align-items:center;flex-wrap:wrap;margin-top:-100px;position:relative;z-index:1}
+.logos img{height:60px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.5rem}
+.card{background:#f5f5f5;padding:1rem;border-radius:10px;border:1px solid #e5e5e5;box-shadow:0 2px 6px rgba(0,0,0,.08);display:flex;flex-direction:column;align-items:center;text-align:center;will-change:transform,opacity;transition:opacity 520ms cubic-bezier(.22,.61,.36,1),transform 520ms cubic-bezier(.22,.61,.36,1),box-shadow .3s ease, transform .3s ease}
+.card:hover{transform:translateY(-6px);box-shadow:0 8px 20px rgba(0,0,0,.15)}
+.card img{margin-bottom:.5rem;object-fit:contain}
+#projetos .card img,#certificados .card img{width:100%;height:160px}
+#reconhecimentos .card img{width:120px;height:120px}
+.card h4{margin-bottom:.5rem;font-weight:600;color:#003366}
+.card p{font-size:.9rem;color:#555;font-weight:400}
+/* ações dos cards */
+.card-actions{display:flex;gap:.6rem;margin-top:.8rem}
+.btn-icon{display:inline-flex;align-items:center;gap:.4rem;padding:.45rem .7rem;border-radius:8px;border:1px solid #d9d9d9;background:#fff;color:#003366;font-weight:700;text-decoration:none;transition:transform .15s ease,box-shadow .2s ease,filter .2s ease-in-out}
+.btn-icon:hover{transform:translateY(-1px);box-shadow:0 3px 8px rgba(0,0,0,.08);filter:brightness(1.05)}
+.btn-icon svg{width:18px;height:18px;fill:currentColor}
+footer{background:#003366;text-align:center;padding:2rem 0}
+.social-icons a{margin:0 1rem;display:inline-block}
+.social-icons img{height:36px;width:36px;border-radius:50%;background:#fff;padding:6px;transition:transform .2s ease}
+.social-icons img:hover{transform:scale(1.1)}
+.card.reveal{opacity:0;transform:translateY(40px)}
+.card.in-view{opacity:1;transform:translateY(0);transition-delay:var(--stagger,0ms)}
+@media (prefers-reduced-motion:reduce){.card{transition:opacity 300ms ease-out}.card.reveal{transform:none}}
+@media (max-width:768px){
+  header{flex-direction:column;text-align:center}
+  .intro h1{font-size:1.4rem}
+  nav{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;padding:1rem 2rem;background:#f8f8f8;position:sticky;top:0;z-index:1000}
+  .hamburger{display:block;position:absolute;top:1rem;right:2rem;font-size:1.8rem;background:none;border:none;cursor:pointer}
+  nav .menu{display:none;flex-direction:column;gap:1rem;width:100%;margin-top:1rem}
+  nav .menu.active{display:flex}
+  nav .menu a{padding:.5rem 0}
 }
-
-body {
-  font-family: 'Roboto', sans-serif;
-  background: #fff; /* fundo principal clean */
-  color: #333;
-  line-height: 1.6;
-}
-
-nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-  background: #f8f8f8;
-  position: relative;
-  top: 0;
-  z-index: 1000;
-}
-nav .logo {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-nav .logo img {
-  height: 40px;
-}
-
-nav .logo span {
-  font-weight: bold;
-  font-size: 1.2rem;
-}
-
-nav .menu {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-nav .menu a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-}
-
-/* Botão hambúrguer oculto por padrão */
-.hamburger {
-  display: none;
-  font-size: 1.8rem;
-  background: none;
-  border: none;
-  cursor: pointer;
-  position: absolute;
-  top: 1rem;
-  right: 2rem;
-}
-
-header {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
-  padding: 3rem 2rem;
-  flex-wrap: wrap;
-  background: #fff;
-}
-
-header img.profile {
-  border-radius: 20px;
-  width: 180px;
-  height: 180px;
-  object-fit: cover;
-}
-
-.intro {
-  max-width: 600px;
-  text-align: left;
-}
-
-.intro h1 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-  color: #003366; /* Azul Poli */
-}
-
-.intro p {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #444; /* Melhor contraste */
-}
-
-section {
-  padding: 2rem 1rem;
-  max-width: 1000px;
-  margin: auto;
-}
-
-section h3 {
-  margin-bottom: 1.5rem;
-  font-size: 1.6rem;
-  color: #003366;
-  text-align: center;
-}
-
-/* EXPERIÊNCIAS */
-.experiencias {
-  background: url('../images/SalesForce_Casadosventos.png') no-repeat center top;
-  background-size: contain;
-  text-align: center;
-  padding: 5rem 1rem 2rem;
-  color: #000;
-  position: relative;
-  height: 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-
-.experiencias h2 {
-  position: absolute;
-  top: 20px;
-  left: 0;
-  right: 0;
-  opacity: 0.3;
-  font-size: 2rem;
-  margin: 0 auto;
-}
-
-.experiencias p {
-  background: rgba(255, 255, 255, 0.8);
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-}
-
-.logos {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-top: -100px;
-  position: relative;
-  z-index: 1;
-}
-
-.logos img {
-  height: 60px;
-}
-
-.cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-}
-
-/* === Cards === */
-.card {
-  background: #f5f5f5;
-  padding: 1rem;
-  border-radius: 10px;
-  border: 1px solid #e5e5e5;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-
-  will-change: transform, opacity;
-  transition:
-    opacity 520ms cubic-bezier(.22,.61,.36,1),
-    transform 520ms cubic-bezier(.22,.61,.36,1),
-    box-shadow 0.3s ease, transform 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
-}
-
-.card img {
-  margin-bottom: 0.5rem;
-  object-fit: contain;
-}
-
-#projetos .card img,
-#certificados .card img {
-  width: 100%;
-  height: 160px;
-}
-
-#reconhecimentos .card img {
-  width: 120px;
-  height: 120px;
-}
-
-.card h4 {
-  margin-bottom: 0.5rem;
-  font-weight: 600;
-  color: #003366;
-}
-
-.card p {
-  font-size: 0.9rem;
-  color: #555;
-  font-weight: 400;
-}
-
-/* === Footer atualizado === */
-footer {
-  background: #003366;
-  text-align: center;
-  padding: 2rem 0;
-}
-
-.social-icons a {
-  margin: 0 1rem;
-  display: inline-block;
-}
-
-.social-icons img {
-  height: 36px;
-  width: 36px;
-  border-radius: 50%;
-  background: #fff;
-  padding: 6px;
-  transition: transform 0.2s ease;
-}
-
-.social-icons img:hover {
-  transform: scale(1.1);
-}
-
-/* Aparição suave dos cards */
-.card.reveal { 
-  opacity: 0;
-  transform: translateY(40px);
-}
-
-.card.in-view {
-  opacity: 1;
-  transform: translateY(0);
-  transition-delay: var(--stagger, 0ms);
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .card { transition: opacity 300ms ease-out; }
-  .card.reveal { transform: none; }
-}
-
-/* Responsividade e Menu Hamburguer */
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .intro h1 {
-    font-size: 1.4rem;
-  }
-
-  nav {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 2rem;
-    background: #f8f8f8;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-  }
-
-  .hamburger {
-    display: block;
-    position: absolute;
-    top: 1rem;
-    right: 2rem;
-    font-size: 1.8rem;
-    background: none;
-    border: none;
-    cursor: pointer;
-  }
-
-  nav .menu {
-    display: none;
-    flex-direction: column;
-    gap: 1rem;
-    width: 100%;
-    margin-top: 1rem;
-  }
-
-  nav .menu.active {
-    display: flex;
-  }
-
-  nav .menu a {
-    padding: 0.5rem 0;
-  }
-}
-
-/* === Botões (menu) === */
-nav .menu .btn-cv {
-  padding: 0.5rem 0.9rem;
-  border-radius: 8px;
-  background: #b40505;
-  color: #fff !important;
-  font-weight: 700;
-  border: none;
-  transition: filter .2s ease-in-out;
-}
-nav .menu .btn-reviewCode {
-  padding: 0.5rem 0.9rem;
-  border-radius: 8px;
-  background: #003366;
-  color: #fff !important;
-  font-weight: 700;
-  border: none;
-  transition: filter .2s ease-in-out;
-}
-nav .menu .btn-SalesForce {
-  padding: 0.5rem 0.9rem;
-  border-radius: 8px;
-  background: #00A1E0;
-  color: #fff !important;
-  font-weight: 700;
-  border: none;
-  transition: filter .2s ease-in-out;
-}
-nav .menu a.btn-cv:hover,
-nav .menu a.btn-reviewCode:hover,
-nav .menu a.btn-SalesForce:hover {
-  filter: brightness(1.1);
-}
+nav .menu .btn-cv{padding:.5rem .9rem;border-radius:8px;background:#b40505;color:#fff!important;font-weight:700;border:none;transition:filter .2s ease-in-out}
+nav .menu .btn-reviewCode{padding:.5rem .9rem;border-radius:8px;background:#003366;color:#fff!important;font-weight:700;border:none;transition:filter .2s ease-in-out}
+nav .menu .btn-SalesForce{padding:.5rem .9rem;border-radius:8px;background:#00A1E0;color:#fff!important;font-weight:700;border:none;transition:filter .2s ease-in-out}
+nav .menu a.btn-cv:hover,nav .menu a.btn-reviewCode:hover,nav .menu a.btn-SalesForce:hover{filter:brightness(1.1)}
   </style>
 </head>
 <body>
@@ -383,13 +95,8 @@ nav .menu a.btn-SalesForce:hover {
 
   <section id="experiencias" class="experiencias">
     <h2>Experiências</h2>
-    <div class="logos">
-    </div>
-    <br>
-  </br>
-    <br>
-    </br>
-
+    <div class="logos"></div>
+    <br><br>
     <p>Developer Salesforce na Casa dos Ventos S.A</p>
   </section>
 
@@ -397,34 +104,88 @@ nav .menu a.btn-SalesForce:hover {
     <h3>Projetos Pessoais</h3>
     <div class="cards">
       <div class="card">
-        <a href = "https://github.com/Huarada/CS50/tree/main/credit"> <img src="../images/cartao_credito.png"></a>
+        <a href="https://github.com/Huarada/CS50/tree/main/credit"><img src="../images/cartao_credito.png" alt=""></a>
         <h4>análise de cartão de crédito</h4>
         <p>Python,validação do Cartão de crédito e verificar a bandeira do cartão.</p>
+        <div class="card-actions">
+          <!-- Play = mesmo link da imagem do card -->
+          <a class="btn-icon" href="https://drive.google.com/file/d/1XJ-AzF1jDZS86Z1zEDDrvQKuBfUcH1pv/view" target="_blank" rel="noopener" aria-label="Assistir vídeo">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg> Play
+          </a>
+          <a class="btn-icon" href="https://github.com/Huarada/CS50/tree/main/credit" target="_blank" rel="noopener" aria-label="Abrir repositório no GitHub">
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.54 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.65 7.65 0 012 0c1.53-1.03 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"/></svg> GitHub
+          </a>
+        </div>
       </div>
+
       <div class="card">
-        <a href = "https://github.com/Huarada/CS50/tree/main/speller"> <img src="../images/speller.png"></a>
+        <a href="https://github.com/Huarada/CS50/tree/main/speller"><img src="../images/speller.png" alt=""></a>
         <h4>speller - CS50x</h4>
         <p>Verificador de ortografia com estrutura de dados hash table, parte do curso CS50x da Harvard.</p>
+        <div class="card-actions">
+          <a class="btn-icon" href="https://drive.google.com/file/d/1kyV1mPZh4-cDJcO6gOZigcfSHK9Tr3hs/view" target="_blank" rel="noopener" aria-label="Assistir vídeo">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg> Play
+          </a>
+          <a class="btn-icon" href="https://github.com/Huarada/CS50/tree/main/speller" target="_blank" rel="noopener" aria-label="Abrir repositório no GitHub">
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.54 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.65 7.65 0 012 0c1.53-1.03 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"/></svg> GitHub
+          </a>
+        </div>
       </div>
+
       <div class="card">
-        <a href = "https://drive.google.com/file/d/18AGfxR7JUpEG_NuXNOV88Fj0DNj_fcRG/view"> <img src="../images/microelectronics.png"></a>
+        <a href="https://drive.google.com/file/d/18AGfxR7JUpEG_NuXNOV88Fj0DNj_fcRG/view"><img src="../images/microelectronics.png" alt=""></a>
         <h4>microprocessador STM32U5</h4>
         <p>Conectado à Amazon Cloud com sensores, atuadores e leitura via painel IoT.</p>
+        <div class="card-actions">
+          <a class="btn-icon" href="https://drive.google.com/file/d/18AGfxR7JUpEG_NuXNOV88Fj0DNj_fcRG/view" target="_blank" rel="noopener" aria-label="Assistir vídeo">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg> Play
+          </a>
+          <a class="btn-icon" href="https://huarada.github.io/" target="_blank" rel="noopener" aria-label="Abrir repositório no GitHub">
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.54 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.65 7.65 0 012 0c1.53-1.03 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"/></svg> GitHub
+          </a>
+        </div>
       </div>
+
       <div class="card">
-        <a href = "https://pagina-finance.onrender.com/login"> <img src="../images/finance_site.png"></a>
+        <a href="https://pagina-finance.onrender.com/login"><img src="../images/finance_site.png" alt=""></a>
         <h4>site dinâmico para finanças</h4>
         <p>extração de Stocks NASDAQ com Plataforma API do Yahoo e página criada por HTML + SQLite.</p>
+        <div class="card-actions">
+          <a class="btn-icon" href="https://pagina-finance.onrender.com/login" target="_blank" rel="noopener" aria-label="Assistir vídeo">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg> Play
+          </a>
+          <a class="btn-icon" href="https://github.com/Huarada/pagina_finance" target="_blank" rel="noopener" aria-label="Abrir repositório no GitHub">
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.54 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.65 7.65 0 012 0c1.53-1.03 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"/></svg> GitHub
+          </a>
+        </div>
       </div>
+
       <div class="card">
-        <a href = "https://github.com/Huarada/CS50/tree/main/filter-more"> <img src="../images/EdgesFilter.png"></a>
+        <a href="https://github.com/Huarada/CS50/tree/main/filter-more"><img src="../images/EdgesFilter.png" alt=""></a>
         <h4>Filtro de imagens – CS50x</h4>
         <p>Processamento de imagem com C e manipulação de matrizes para criar efeitos visuais.</p>
+        <div class="card-actions">
+          <a class="btn-icon" href="https://drive.google.com/file/d/1BoAsYVn-SZ-wIPrp0xMRgvadvK0uZsJm/view" target="_blank" rel="noopener" aria-label="Assistir vídeo">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg> Play
+          </a>
+          <a class="btn-icon" href="https://github.com/Huarada/CS50/tree/main/filter-more" target="_blank" rel="noopener" aria-label="Abrir repositório no GitHub">
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.54 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.65 7.65 0 012 0c1.53-1.03 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"/></svg> GitHub
+          </a>
+        </div>
       </div>
+
       <div class="card">
-        <a href = "https://github.com/Huarada/RedeNeuralDetectorImagem/blob/main/visaoComputacional.ipynb"> <img src="../images/REDENeural.png"></a>
+        <a href="https://github.com/Huarada/ComputerVisionBananas"><img src="../images/REDENeural.png" alt=""></a>
         <h4>Detecção com Rede Neural</h4>
         <p>Modelo com CNN para localização e reconhecimento de objetos em imagens.</p>
+        <div class="card-actions">
+          <a class="btn-icon" href="https://github.com/Huarada/ComputerVisionBananas" target="_blank" rel="noopener" aria-label="Assistir vídeo">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg> Play
+          </a>
+          <a class="btn-icon" href="https://github.com/Huarada/ComputerVisionBananas" target="_blank" rel="noopener" aria-label="Abrir repositório no GitHub">
+            <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.54 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.65 7.65 0 012 0c1.53-1.03 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0016 8c0-4.42-3.58-8-8-8z"/></svg> GitHub
+          </a>
+        </div>
       </div>
     </div>
   </section>
@@ -433,32 +194,32 @@ nav .menu a.btn-SalesForce:hover {
     <h3>Certificados</h3>
     <div class="cards">
       <div class="card">
-        <a href ="https://drive.google.com/file/d/1hzwB-6B2PukLjwIu-f4EKWo2dIxhA9f1/view"><img src="../images/certification/cs50.png"></a>          
+        <a href="https://drive.google.com/file/d/1hzwB-6B2PukLjwIu-f4EKWo2dIxhA9f1/view"><img src="../images/certification/cs50.png" alt=""></a>
         <h4>CS50x – Harvard</h4>
         <p>Introdução à Ciência da Computação.</p>
       </div>
       <div class="card">
-        <a href ="https://www.coursera.org/account/accomplishments/verify/GATCMGPDAJE5?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course"><img src="../images/certification/michigan_u.png"></a>
+        <a href="https://www.coursera.org/account/accomplishments/verify/GATCMGPDAJE5?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course"><img src="../images/certification/michigan_u.png" alt=""></a>
         <h4>Applied Machine Learning – Michigan University</h4>
         <p>Métodos de aprendizado supervisionado.</p>
       </div>
       <div class="card">
-        <a href ="https://drive.google.com/file/d/1eXKN3l_2CHs1Hc9d1cO2B_qYDj5WsxSv/view"><img src="../images/certification/google_cloud_academy.png"></a>
+        <a href="https://drive.google.com/file/d/1eXKN3l_2CHs1Hc9d1cO2B_qYDj5WsxSv/view"><img src="../images/certification/google_cloud_academy.png" alt=""></a>
         <h4>Google Cloud Foundations ACADEMY</h4>
         <p>Fundamentos do Google Cloud Computing.</p>
       </div>
       <div class="card">
-        <a href ="https://www.udemy.com/certificate/UC-8560deb8-3128-44f3-b3ea-4da699188efe/"><img src="../images/certification/web_developer.png"></a>
+        <a href="https://www.udemy.com/certificate/UC-8560deb8-3128-44f3-b3ea-4da699188efe/"><img src="../images/certification/web_developer.png" alt=""></a>
         <h4>Curso Desenvolvedor Web Completo</h4>
         <p>HTML, CSS, JS, Node.js, React, PHP, MySQL, Javascript </p>
       </div>
       <div class="card">
-        <a href ="https://verify.skilljar.com/c/cu6mu3a4qivy"><img src="../images/certification/clickup.png"></a>
+        <a href="https://verify.skilljar.com/c/cu6mu3a4qivy"><img src="../images/certification/clickup.png" alt=""></a>
         <h4>ClickUp Expert Certificate</h4>
         <p>Certificação de produtividade, gestão e metodologias Ágeis com ClickUp.</p>
       </div>
       <div class="card">
-        <a href ="https://courses.cognitiveclass.ai/certificates/73a7e0ee3a3841c9bad21523acaaf323"><img src="../images/certification/ibm.png"></a>
+        <a href="https://courses.cognitiveclass.ai/certificates/73a7e0ee3a3841c9bad21523acaaf323"><img src="../images/certification/ibm.png" alt=""></a>
         <h4>Python 101 for Data Science – IBM</h4>
         <p>Fundamentos de Python para ciência de dados.</p>
       </div>
@@ -470,28 +231,32 @@ nav .menu a.btn-SalesForce:hover {
     <div class="cards">
       <div class="card">
         <h4>Medalha de Bronze - Physics Cup</h4>
-        <img src="../images/medalhas/Physics_cup.png">
+        <img src="../images/medalhas/Physics_cup.png" alt="">
         <p>(2018) Universidade de Talin – Estônia.</p>
       </div>
-      <div class="card"><h4>Medalhas de Ouro - OBA</h4>
-        <img src="../images/medalhas/oba.png">
+      <div class="card">
+        <h4>Medalhas de Ouro - OBA</h4>
+        <img src="../images/medalhas/oba.png" alt="">
         <p>(2017-2018-2019) medalha de ouro - Olimpíada de Astronomia e Astronáutica.</p>
       </div>
-      <div class="card"><h4>Olimpíada Brasileira de Física</h4>
-        <img src="../images/medalhas/obf.png">
+      <div class="card">
+        <h4>Olimpíada Brasileira de Física</h4>
+        <img src="../images/medalhas/obf.png" alt="">
         <p>(2016-2017-2019) Medalha de Prata</p>
       </div>
-      <div class="card"><h4>Olimpíada Paulista de Física</h4>
-        <img src="../images/medalhas/opf.png">
-        <p>(2019) medalha de Bronze <br>
-          (2016) Medalha de Ouro</p>
+      <div class="card">
+        <h4>Olimpíada Paulista de Física</h4>
+        <img src="../images/medalhas/opf.png" alt="">
+        <p>(2019) medalha de Bronze <br>(2016) Medalha de Ouro</p>
       </div>
-      <div class="card"><h4>Olimpíada Brasileira de Robótica</h4>
-        <img src="../images/medalhas/obr.png">
+      <div class="card">
+        <h4>Olimpíada Brasileira de Robótica</h4>
+        <img src="../images/medalhas/obr.png" alt="">
         <p>(2016) Medalha de Ouro – UNICAMP.</p>
       </div>
-      <div class="card"><h4>Paulista de Robótica – UNICAMP</h4>
-        <img src="../images/medalhas/unicamp.png">
+      <div class="card">
+        <h4>Paulista de Robótica – UNICAMP</h4>
+        <img src="../images/medalhas/unicamp.png" alt="">
         <p>(2016 - 2017) Medalha de Ouro</p>
       </div>
     </div>
@@ -504,53 +269,11 @@ nav .menu a.btn-SalesForce:hover {
       <a href="https://www.instagram.com/lucas.harada.94?igsh=MTkxdjFrZ2N6bW1qcQ==" target="_blank"><img src="../images/logos/instagram.jpg" alt="Instagram"></a>
     </div>
   </footer>
-  
+
 <script>
-function toggleMenu() {
-  document.querySelector('nav .menu').classList.toggle('active');
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-  const cards = Array.from(document.querySelectorAll('.cards .card'));
-
-  // Estado inicial: oculto
-  cards.forEach((card, i) => {
-    card.classList.add('reveal');
-    card.style.setProperty('--stagger', `${Math.min(i * 60, 360)}ms`);
-  });
-
-  const io = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        requestAnimationFrame(() => {
-          entry.target.classList.add('in-view');
-          io.unobserve(entry.target);
-        });
-      }
-    });
-  }, {
-    root: null,
-    rootMargin: '0px 0px -10% 0px',
-    threshold: 0.1
-  });
-
-  // Aguarda 1 frame antes de observar
-  requestAnimationFrame(() => {
-    cards.forEach(card => io.observe(card));
-  });
-
-  //Forca animação também no carregamento inicial (para quem já está no viewport)
-  setTimeout(() => {
-    cards.forEach(card => {
-      const rect = card.getBoundingClientRect();
-      const vh = window.innerHeight || document.documentElement.clientHeight;
-      if (rect.top < vh * 0.9) {
-        card.classList.add('in-view');
-      }
-    });
-  }, 200); // 200ms de atraso dá tempo do .reveal "pintar"
-});
+function toggleMenu(){document.querySelector('nav .menu').classList.toggle('active')}
+document.addEventListener('DOMContentLoaded',()=>{const cards=Array.from(document.querySelectorAll('.cards .card'));cards.forEach((card,i)=>{card.classList.add('reveal');card.style.setProperty('--stagger',`${Math.min(i*60,360)}ms`)});const io=new IntersectionObserver((entries)=>{entries.forEach(entry=>{if(entry.isIntersecting){requestAnimationFrame(()=>{entry.target.classList.add('in-view');io.unobserve(entry.target)})}})},{root:null,rootMargin:'0px 0px -10% 0px',threshold:0.1});requestAnimationFrame(()=>{cards.forEach(card=>io.observe(card))});setTimeout(()=>{cards.forEach(card=>{const rect=card.getBoundingClientRect();const vh=window.innerHeight||document.documentElement.clientHeight;if(rect.top<vh*0.9){card.classList.add('in-view')}})},200)})
 </script>
-  
 </body>
 </html>
+
