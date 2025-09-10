@@ -61,7 +61,24 @@ nav .menu .btn-cv{padding:.5rem .9rem;border-radius:8px;background:#b40505;color
 nav .menu .btn-reviewCode{padding:.5rem .9rem;border-radius:8px;background:#003366;color:#fff!important;font-weight:700;border:none;transition:filter .2s ease-in-out}
 nav .menu .btn-SalesForce{padding:.5rem .9rem;border-radius:8px;background:#00A1E0;color:#fff!important;font-weight:700;border:none;transition:filter .2s ease-in-out}
 nav .menu a.btn-cv:hover,nav .menu a.btn-reviewCode:hover,nav .menu a.btn-SalesForce:hover{filter:brightness(1.1)}
-  </style>
+  
+.lh-bot p, .lh-bot ul, .lh-bot ol {
+  margin: 6px 0;
+}
+.lh-bot ul {
+  padding-left: 18px;
+  list-style-type: disc;
+}
+.lh-bot ol {
+  padding-left: 18px;
+  list-style-type: decimal;
+}
+.lh-bot strong {
+  font-weight: 700;
+  color: #111827;
+}
+  
+</style>
 </head>
 
 
@@ -118,7 +135,9 @@ nav .menu a.btn-cv:hover,nav .menu a.btn-reviewCode:hover,nav .menu a.btn-SalesF
   const addMsg = (text, who) => {
     const div = document.createElement('div');
     div.className = `lh-msg ${who === 'user' ? 'lh-user' : 'lh-bot'}`;
-    div.textContent = text;
+    // Converte markdown para HTML
+    div.innerHTML = marked.parse(text);
+
     msgs.appendChild(div);
     msgs.scrollTop = msgs.scrollHeight;
   };
@@ -161,6 +180,7 @@ nav .menu a.btn-cv:hover,nav .menu a.btn-reviewCode:hover,nav .menu a.btn-SalesF
   });
 })();
 </script>
+<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 
 
 
