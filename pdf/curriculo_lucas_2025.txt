@@ -1,30 +1,28 @@
-Lucas Harada ∙ (11) 9 7737 0035 ∙ lucasharada51@gmail.com 
-L U C A S H A R A D A 
+Lucas Harada ∙ (11) 9 7737 0035 ∙ lucasharada51@gmail.com LUCAS HARADA 
 Rua Inácio Manuel Alvares, 360 ∙ Jardim Esther ∙ São Paulo/SP 
 (11) 9 7737 0035 ∙ lucasharada51@gmail.com 
-Brasileiro, solteiro, 23 anos 
+Brasileiro, solteir o, 23 anos  
 OBJETIVO 
- Trainee – Engenharia de Software e Machine Learning 
+ Desenvolvedor Back-end Junior  – Engenharia de Software e Machine Learning  
 PERFIL PROFISSIONAL 
- ◼ Desenvolvimento de Carreira: Profissional em desenvolvimento de carreira na área de tecnologia, com foco 
+  Desenvolvimento de Carreira:  Profissional em desenvolvimento de carreira na área de tecnologia, com foco 
 em desenvolvimento de software, machine learning e inteligência artificial. 
-◼ Experiência em Programação: Experiência em programação de software utilizando linguagens como C, C++, 
-Python, JAVA, HTML, Flutter e SQL 
-◼ Conhecimentos em Algoritmos: Conhecimentos em algoritmos genéticos e integração com APIs , como 
+ Experiência em Programação:  Experiência em programação de software utilizando linguagens como C, C++, 
+Python, JAVA, HTML, REACT, JAVASCRIPT e SQL 
+ Conhecimentos em Algoritmos:  Conhecimentos em algoritmos genéticos e integração com APIs, como 
 OPENAI e Google Cloud. 
-◼ Projetos de Machine Learning: Habilidades em desenvolvimento de projetos de machine learning, criação 
+ Projetos de Machine Learning:  Habilidades em desenvolvimento de projetos de machine learning, criação 
 de assistentes virtuais e desenvolvimento de aplicações web e móveis. 
-◼ Aprimoramento Contínuo: Busca constante pelo aprimoramento de habilidades e atualização sobre novas 
+ Aprimoramento Contínuo:  Busca constante pelo aprimoramento de habilidades e atualização sobre novas 
 tecnologias em ambientes de alta complexidade. 
-◼ Disposição para Novas Responsabilidades: Disposição para assumir novas responsabilidades e contribuir 
+ Disposição para Novas Responsabilidades:  Disposição para assumir novas responsabilidades e contribuir 
 para a geração de resultados significativos à empresa. 
-◼ Disponibilidade para Viagens: Disponibilidade para viagens no Brasil e exterior. 
+ Disponibilidade para Viagens:  Disponibilidade para viagens no Brasil e exterior . 
  
 EXPERIÊNCIA PROFISSIONAL 
  
-nov/2024-ago/2025 
- 
-Estágio em engenharia de software na casa dos ventos S.A: Desenvolvedor e Administrador 
+nov/2024-nov/2025  
+ Estágio em engenharia de software na casa dos ventos S.A : Desenvolvedor e Administrador 
 do Salesforce. Reestruturação do Salesforce da empresa, definindo UMLs para modelagem e 
 arquitetura do Sistema. Entendimento das Regras de Negócios e funil de vendas/Leads para 
 os diversos produtos comercializados. Programação em APEX, HTML, Visualforce, XML e 
@@ -34,72 +32,90 @@ integração com SAP. Controle de permissionamento e visibilidade de usuários
  
  
 PROJETOS ACADÊMICOS E PESSOAIS 
- 
-Jul/2024 – ago/2025 
-Plataforma de jogo WAR com Algoritmos Genéticos e Assistente Virtual: Uso de 
-Algoritmos Genéticos para selecionar as melhores estratégias para os Agentes 
-Autônomos (Bots) do jogo de tabuleiro WAR. Em seguida foi construído uma 
-aplicação WEB com plataforma interativa, no qual o usuário pode visualizar os bots 
-jogando entre si em tempo real e acessar um Assistente Virtual capaz de explicar as 
-jogadas e tomadas de decisões dos Agentes. O Assistente foi implementado usando 
-uma integração com o ChatGPT, com uma API da OPENAI. 
-
+  
+Jan/2025 – dez /2025       
  
  
-Lucas Harada ∙ (11) 9 7737 0035 ∙ lucasharada51@gmail.com 
-Jul/2023 – jul 2023 CS50 SCHEDULE APP: desenvolvimento de um aplicativo de agendamento para celular 
+ 
+ 
+ 
+ WAR Professor – Plataforma gamificada de ensino à Teoria dos Jogos (TCC POLI-USP, 2025)  
+Desenvolvimento de um serious game  baseado no tabuleiro WAR, que serve como ambiente 
+de teste para agentes autônomos implementados com Algoritmos Genéticos, cujo genoma 
+representa diferentes graus de agressividade estratégica e permite estratégias mistas por 
+indivíduo. 
+Os agentes foram integrados à plataforma WAR Professor, onde estudantes do ensino 
+secundário podem interagir em partidas contra bots e compreender suas decisões por meio 
+de um Agente Virtual explicativo (Explainable AI) que ilustra conceitos como Equilíbrio de 
+Nash e Pay-off. 
+ 
+ 
+Lucas Harada ∙ (11) 9 7737 0035 ∙ lucasharada51@gmail.com  
+ 
+ 
+Jul/2025-nov/2025 
+ 
+ 
+ 
+Jul/2023 – jul 2023 Hospedado na AWS (Elastic Beanstalk, Route 53 e ACM), com pipeline DevOps completo e 
+foco em ensino gamificado e interpretabilidade de IA. 
+ 
+Sarcasm Detection from Voice (MUStARD++)  — Projeto em Python/Jupyter que detecta 
+sarcasmo na fala com base em entonação, timbre e ritmo, sem usar o texto. Utiliza Mel-
+spectrogramas narrowband (RGB: log- mel, ΔMFCC, ΔΔMFCC) e uma Rede Neural ResNet leve 
+treinada com augmentação de áudio no dataset MUStARD++. 
+ 
+CS50 SCHEDULE APP : desenvolvimento de um aplicativo de agendamento para celular 
 usando as linguagens Flutter e Dart. O aplicativo pode ser usando tanto em PCs (página web) 
 quanto em celulares, e foi construído usando o Android Studio. 
-Jul/2023 – jul 2023 Criação e hosteamento de um site Dinâmico para a compra e venda de ações. Uso do banco 
-de dados IEX para atualização dos preços de ações 
-Jul/2023 – jul 2023 Projeto de jogo da velha jogando contra uma CPU (Inteligência artificial) programada em 
+Jul/2023 – jul 2023 Criação e hosteamento de um site Dinâmico para a compra e venda de ações . Uso do banco 
+de dados IEX para atualização dos preços de ações  
+Jul/2023 – jul 2023 Projeto de jogo da velha jogando contra uma CPU  (Inteligência artificial) programada em 
 Python 
-Mai/2023 – mai/2023 Criação de um site de armazenamento de datas de aniversário usando html e flask 
-Mai/2023 – mai/2023 Criação de uma página de trivia, no qual o usuário é indicado a assinalar a resposta correta 
+Mai/2023 – mai/2023  Criação de um site de armazenamento de datas  de aniversário  usando html e flask  
+Mai/2023 – mai/2023 Criação de uma página de trivia , no qual o usuário é indicado a assinalar a resposta correta 
 nas questões 
-Mar/2023 – Mar/2023 Projeto de programa em C que detecta quaisquer erros de digitação em um arquivo texto. 
+Mar/2023 – Mar/2023 Projeto de programa em C que detecta quaisquer erros de digitação em um arquivo texto . 
 De modo a utilizar um arquivo secundário de consulta (dictionary) para verificar a digitação 
 correta 
-Fev/2023 – fev/2023 Criação de um filtro de imagens com 4 modos de operação: b-blur (imagem borrada), r-
+Fev/2023 – fev/2023 Criação de um filtro de imagens com 4 modos de operação : b-blur (imagem borrada), r-
 reflect (imagem refletida), g-grayscale(imagem em tons de cinza), e e-edges(imagem preta 
 com contorno branco). Para fazer esse filtro foi utilizado diversos algoritmos de comparação 
 de pixels ao redor da vizinhança, para poder ser feito a alteração da escala RGB de acordo 
-com a funcionalidade. Filtro produzido exclusivamente usando a linguagem C 
-Fev 2023 – Fev 2023 Uso do microprocessador STM32-U5 conectado a AWS para a medição de dados do 
+com a funcionalidade. Filtro produzido exclusivamente usando a linguagem C  
+Fev 2023 – Fev 2023  Uso do microprocessador STM32-U5 conectado a AWS  para a medição de dados do 
 ambiente, como umidade pressão e temperatura local, e tratamento desses dados para a 
-melhor compreensão 
-Ago/2022 – Ago/2022 Desenvolvimento de um relógio eletrônico usando Circuitos Integrados, aplicando a 
+melhor compreensão  
+Ago/2022 – Ago/2022                                        Desenvolvimento de um relógio eletrônico  usando Circuitos Integrados, aplicando a 
 metodologia de projeto estruturado na implementação de sistemas digitais – Fluxo de Dados 
 e Unidades de Controle. Utilização de VHDL – Linguagem de Descrição de Hardware e do 
 ambiente Quartus DELL para a projeção do Sistema Digital. Implementação de Painel de 
-Montagem com 4 soquetes, 12 chaves, 3 botões e 2 displays de contagem. 
-Jan/2022 – Ago/2022 Desenvolvimento de interpolador em C++ para geração de gráfico com os pontos de calor 
+Montagem com 4 soquetes, 12 chaves, 3 botões e 2 displays de contagem.  
+Jan/2022 – Ago/2022                                        Desenvolvimento de interpolador em C++  para geração de gráfico com os pontos de calor 
 (HotSpots) presentes em uma placa de processamento, conforme a Condutância Térmica da 
-Placa e da temperatura ambiente. 
-Nov/2021 – Nov/2021 Desenvolvimento de projeto de sistema digital, utilizando VHDL – Linguagem de Descrição 
+Placa e da temperatura ambiente.  
+Nov/2021 – Nov/2021                                        Desenvolvimento de projeto de sistema digital, utilizando VHDL  – Linguagem de Descrição 
 de Hardware, para replicar uma versão simplificada de um processador LEGv8 (criado pelo 
 Departamento de Engenharia de Computação e Sistemas da USP). 
-Set/2021 – Out/2021 Planejamento e criação de um sistema de roteamento em C++ para geração de Tabela de 
+Set/2021 – Out/2021                                        Planejamento e criação de um sistema de roteamento em C++  para geração de Tabela de 
 Repasse dos Datagramas trocados entre usuários de uma mesma Rede. 
-Jan/2021 – Dez/2021 Desenvolvimento de um Filtro de Reverberação (Comb Filter) utilizando o software 
+Jan/2021 – Dez/2021                                        Desenvolvimento de um Filtro de Reverberação (Comb Filter)  utilizando o software 
 LabView, da National Instruments, para criação de efeito de eco no som original, 
-amplificação e atenuação do eco, além de controlar o tempo de reverberação. 
+amplificação e atenuação do  eco, além de controlar o tempo de reverberação.  
  
 FORMAÇÃO ACADÊMICA 
- Previsão para dez/2025 Bacharelado em Engenharia Elétrica com ênfase em Eletrônica e Sistemas Computacionais 
-POLI USP Escola Politécnica da Universidade de São Paulo ∙ São Paulo/SP 
+ Previsão para dez/2025                                        Bacharelado em Engenharia Elétrica com ênfase em Eletrônica e Sistemas Computacionais 
+POLI USP Escola Politécnica da Universidade de São Paulo ∙ São Paulo/SP  
  
  
-
  
  
-Lucas Harada ∙ (11) 9 7737 0035 ∙ lucasharada51@gmail.com 
-CURSO 
+Lucas Harada ∙ (11) 9 7737 0035 ∙ lucasharada51@gmail.com CURSO 
  
-mai/2024 
+mai/2024     
 27 horas 
  
-mai/2024 
+mai/2024     
 15 horas 
  
 dez/2023 
@@ -111,8 +127,7 @@ nov/2023
 set/2023 
 25 horas 
  
-set/2023 
-Introduction to Git and Github 
+set/2023 Introduction to Git and Github 
 Google 
  
 Python 101 for Data Science 
@@ -127,44 +142,42 @@ Kaggle
 Applied Machine Learning in Python 
 University of Michigan 
  
-Google Cloud Computing Foundations ACADEMY 
+Google Cloud Computing Foundations ACADEMY  
+  
+ 40 horas         Google Cloud Skills Boost 
  
- 40 horas Google Cloud Skills Boost 
+jul/2023 CS50x Certificate – Harvard’s Introduction to Computer Science   
+  
+   200 horas         Harvard University 
  
-jul/2023 CS50x Certificate – Harvard’s Introduction to Computer Science 
+jul/2023 Learn Python 3 Course  
+  
+   25 horas         Codecademy 
  
- 200 horas Harvard University 
+fev/2023 Using MATLAB with Python  
+  
+   1 hora         Mathworks 
  
-jul/2023 Learn Python 3 Course 
- 
- 25 horas Codecademy 
- 
-fev/2023 Using MATLAB with Python 
- 
- 1 hora Mathworks 
- 
-jan/2023 Introduction to AI with MATLAB 
- 
- 1 hora Mathworks 
+jan/2023 Introduction to AI with MATLAB  
+  
+   1 hora         Mathworks 
  
 dez/2022 Excel + Business Program 
- 
- 40 horas Business Training Company 
+  
+   40 horas         Business Training Company 
  
 nov/2022 NVIDIA – Plataforma de Inteligência artificial para saúde e ciências da vida 
- 
- 2 horas Argo Inovação em saúde, com colaboração da NVIDIA 
- 
- 
-Abr/2019 Masterclasses Hands on Particle Physics –ALICE 
- 
- 12 horas Universidade de São Paulo 
- 
-
+  
+   2 horas         Argo Inovação em saúde, com colaboração da NVIDIA 
  
  
-Lucas Harada ∙ (11) 9 7737 0035 ∙ lucasharada51@gmail.com 
+Abr/2019  Masterclasses Hands on Particle Physics –ALICE  
+  
+   12 horas         Universidade de São Paulo 
  
+ 
+ 
+Lucas Harada ∙ (11) 9 7737 0035 ∙ lucasharada51@gmail.com  
  
  
  
@@ -172,32 +185,32 @@ Lucas Harada ∙ (11) 9 7737 0035 ∙ lucasharada51@gmail.com
  
  
 IDIOMAS 
- Inglês avançado 
+ Inglês avançado  
  
 PRÊMIOS E RECONHECIMENTOS 
- 2020 Mathematica and Wolfram Language Workshop for Engineering 
-Wolfram U 
-2019 Menção Honrosa - OBMEP para escolas particulares 
-Olimpíada Brasileira de Matemática das Escolas Públicas 
-2016, 2017 e 2019 Medalha de Prata - Olimpíada Brasileira de Física 
-Sociedade Brasileira de Física ∙ São Paulo/SP 
-2013, 2016 - 2019 Medalha de Prata - Canguru de Matemática 
-Association Kangourou sans Frontières 
-2017 e 2018 Medalha de Ouro - Olimpíada Brasileira de Astronomia e Astronáutica 
-Sociedade Astronômica Brasileira ∙ São Paulo/SP 
-2018 Medalha de Bronze - Physics Cup 
-Taltech – Talinn University of Technology ∙ Tallin, Estônia 
-2018 Menção Honrosa- Olimpíada Brasileira de Física 
-Sociedade Brasileira de Física ∙ São Paulo/SP 
-2015 e 2018 Menção Honrosa - Olimpíada Paulista de Física 
-Sociedade Brasileira de Física ∙ São Paulo/SP 
-2016 e 2017 Medalha de Ouro - Olimpíada Paulista de Robótica 
-UNICAMP ∙ Campinas/SP 
+ 2020                                       Mathematica and Wolfram Language Workshop for Engineering 
+Wolfram U  
+2019                                       Menção Honrosa - OBMEP para escolas particulares 
+Olimpíada Brasileira de Matemática das  Escolas Públicas 
+2016, 2017 e 2019                                       Medalha de Prata - Olimpíada Brasileira de Física 
+Sociedade Brasileira de Física ∙ São Paulo/SP  
+2013, 2016 - 2019                                        Medalha de Prata - Canguru de Matemática 
+Association Kangourou sans Frontières  
+2017 e 2018                                    Medalha de Ouro - Olimpíada Brasileira de Astronomia e Astronáutica 
+Sociedade Astronômica Brasileira  ∙ São Paulo/SP 
+2018                                        Medalha de Bronze - Physics Cup 
+Taltech – Talinn University of Technology ∙ Tallin, Estônia  
+2018                                       Menção Honrosa- Olimpíada Brasileira de Física 
+Sociedade Brasileira de Física ∙ São Paulo/SP  
+2015 e 2018                                        Menção Honrosa - Olimpíada Paulista de Física 
+Sociedade Brasileira de Física ∙ São Paulo/SP  
+2016 e 2017                                      Medalha de Ouro - Olimpíada Paulista de Robótica 
+UNICAMP ∙ Campinas/SP  
 2016 Medalha de Ouro - Olimpíada Brasileira de Robótica 
-UNICAMP ∙ Campinas/SP 
-2016 Medalha de Ouro - Olimpíada Paulista de Física 
-Associação Paulista dos Professores de Física ∙ São José dos Campos/SP 
-2015 Medalha de Bronze - Canguru de Matemática 
-Association Kangourou sans Frontières 
-2015 Menção Honrosa - Olimpíada Paulista de Física 
-Associação Paulista dos Professores de Física ∙ São José dos Campos/SP
+UNICAMP ∙ Campinas /SP 
+2016                                        Medalha de Ouro - Olimpíada Paulista de Física 
+Associação Paulista dos Professores de Física  ∙ São José dos Campos /SP 
+2015                                        Medalha de Bronze - Canguru de Matemática 
+Association Kangourou sans Frontières  
+2015                                        Menção Honrosa - Olimpíada Paulista de Física 
+Associação Paulista dos Professores de Física ∙ São José dos Campos/SP  
