@@ -107,9 +107,37 @@ nav .menu a.btn-cv:hover,nav .menu a.btn-reviewCode:hover,nav .menu a.btn-SalesF
 #lh-chat form{display:flex; gap:8px; padding:10px; border-top:1px solid #eee; background:#fff;}
 #lh-chat input{flex:1; padding:10px; border:1px solid #ddd; border-radius:8px;}
 #lh-chat button[type=submit]{background:#003366; color:#fff; border:none; border-radius:8px; padding:10px 12px; font-weight:700; cursor:pointer;}
+
+/* Animação pulsar para botão Chat */
+.pulse-chat {
+  animation: pulseChat 1.8s infinite;
+  box-shadow: 0 0 0 0 rgba(0, 51, 102, 0.6);
+  transition: transform 0.2s ease-in-out;
+}
+
+.pulse-chat:hover {
+  animation: none;
+  transform: scale(1.05);
+}
+
+@keyframes pulseChat {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 51, 102, 0.6);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 15px rgba(0, 51, 102, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 51, 102, 0);
+  }
+}
+
 </style>
 
-<button id="lh-chat-toggle">Chat</button>
+<button id="lh-chat-toggle" class="pulse-chat">Chat</button>
 <div id="lh-chat" role="dialog" aria-label="Assistente virtual">
   <header>Assistente – Portfólio</header>
   <div class="msgs" id="lh-msgs"></div>
