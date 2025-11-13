@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3205067f.css",
+    "main.js": "/static/js/main.141cc29c.js",
+    "static/css/64.bba8fa55.chunk.css": "/static/css/64.bba8fa55.chunk.css",
+    "static/js/64.56dc6704.chunk.js": "/static/js/64.56dc6704.chunk.js",
+    "static/css/769.3bd2de1d.chunk.css": "/static/css/769.3bd2de1d.chunk.css",
+    "static/js/769.9cc57c7f.chunk.js": "/static/js/769.9cc57c7f.chunk.js",
+    "static/media/detectorBananas.png": "/static/media/detectorBananas.bc1eba27ad8c9d8e55c6.png",
+    "static/media/resume.pdf": "/static/media/resume.f1798aaa64e7e99a7ddd.pdf",
+    "static/media/war-logo.png": "/static/media/war-logo.d20ca1c875dbdfffcf91.png",
+    "static/media/michigan_u.png": "/static/media/michigan_u.029e061bc8dde7778b2f.png",
+    "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
+    "static/media/google_cloud_academy.png": "/static/media/google_cloud_academy.0f58b28680b3c75aea54.png",
+    "static/media/acuraciaSarcasmo.png": "/static/media/acuraciaSarcasmo.7daaad4c6ddec19df46c.png",
+    "static/media/Agustina.woff": "/static/media/Agustina.eb0c59dda4cc308cba96.woff",
+    "static/media/unicamp.png": "/static/media/unicamp.ce5aa9e577ef288bbf79.png",
+    "static/media/escudoPoliUsp.png": "/static/media/escudoPoliUsp.ac26d1f36ca81935f57c.png",
+    "static/media/manOnTable.svg": "/static/media/manOnTable.8f117eb207e57ed8f89d67d595aceb45.svg",
+    "static/media/obf.png": "/static/media/obf.b80c5078ddfc271da021.png",
+    "static/media/contactMailDark.svg": "/static/media/contactMailDark.1db650d351729a0f17b4e3104e6a7b7a.svg",
+    "static/media/developerActivity.svg": "/static/media/developerActivity.2c0445cae86f4243433a2f5a22b2c031.svg",
+    "static/media/finance_site.png": "/static/media/finance_site.1fbd6040b5633cea758a.png",
+    "static/media/skill.svg": "/static/media/skill.35a147662ab0a1d15e579690446e0258.svg",
+    "index.html": "/index.html",
+    "static/media/talksCardBack.svg": "/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
+    "main.3205067f.css.map": "/static/css/main.3205067f.css.map",
+    "main.141cc29c.js.map": "/static/js/main.141cc29c.js.map",
+    "64.bba8fa55.chunk.css.map": "/static/css/64.bba8fa55.chunk.css.map",
+    "64.56dc6704.chunk.js.map": "/static/js/64.56dc6704.chunk.js.map",
+    "769.3bd2de1d.chunk.css.map": "/static/css/769.3bd2de1d.chunk.css.map",
+    "769.9cc57c7f.chunk.js.map": "/static/js/769.9cc57c7f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3205067f.css",
+    "static/js/main.141cc29c.js"
+  ]
+}
