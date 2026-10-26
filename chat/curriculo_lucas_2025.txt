@@ -10,7 +10,7 @@ Lucas Harada é desenvolvedor back-end com foco em integração de IA, formado e
 ## contato | Contato e localização
 Busca: contato email telefone linkedin github site localização cidade contact phone location contratar recrutador entrevista
 Nome: Lucas Harada. Localização: São Paulo, SP, Brasil.
-E-mail: lucasharada51@gmail.com. Telefone: +55 (11) 97737-0035.
+E-mail: lucasharada51@gmail.com. O telefone está disponível somente no currículo em PDF, pelo botão "Baixe meu currículo" em https://huarada.github.io/#resume. Para contato pelo site, use e-mail ou LinkedIn.
 LinkedIn: https://www.linkedin.com/in/eng-lucas-harada
 GitHub: https://github.com/Huarada
 Portfólio: https://huarada.github.io
