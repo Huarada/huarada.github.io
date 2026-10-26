@@ -1,1 +1,10 @@
-{"data":{"user":{"name":"Lucas Harada","bio":"Backend Engineer | Java, Python, SQL, AWS, Google Cloud | POLI-USP","avatarUrl":"https://avatars.githubusercontent.com/u/121201067?u=0f3759a16d05ca3ff9f1d33ce13e06d5b71fae6a&v=4","location":"São Paulo, Brazil","pinnedItems":{"totalCount":4,"edges":[{"node":{"name":"JupyterNotebookAlgoritmoWar","description":"Exploratory analysis using Jupyter Notebook to identify optimal  strategies in WAR — research base for the genetic algorithm TCC project.","forkCount":0,"stargazers":{"totalCount":0},"url":"https://github.com/Huarada/JupyterNotebookAlgoritmoWar","id":"R_kgDOPfKeow","diskUsage":63,"primaryLanguage":{"name":"Jupyter Notebook","color":"#DA5B0B"}}},{"node":{"name":"projetoWarProfessor","description":"Genetic algorithm that evolves optimal attack strategies for the  board game WAR. Undergraduate thesis (TCC) — POLI-USP, 2024.","forkCount":0,"stargazers":{"totalCount":0},"url":"https://github.com/Huarada/projetoWarProfessor","id":"R_kgDOQAME9A","diskUsage":44001,"primaryLanguage":{"name":"JavaScript","color":"#f1e05a"}}},{"node":{"name":"sarcasm-detection-from-voice","description":"Machine Learning project in Python (Jupyter Notebook) that detects sarcasm from voice tone, timbre, and intonation, not text. Uses narrowband Mel-spectrograms to capture subtle acoustic and prosodic patterns revealing sarcasm through sound alone.","forkCount":0,"stargazers":{"totalCount":0},"url":"https://github.com/Huarada/sarcasm-detection-from-voice","id":"R_kgDOQSBfiw","diskUsage":542142,"primaryLanguage":{"name":"Jupyter Notebook","color":"#DA5B0B"}}},{"node":{"name":"finstatement","description":"Pipeline de extração de dados financeiros em Python (Clean Architecture). Transforma PDFs complexos de RI em dados estruturados (Pydantic), aplica regras de negócio do Value Investing e orquestra LLMs locais para análise narrativa sem alucinações.","forkCount":0,"stargazers":{"totalCount":8},"url":"https://github.com/Huarada/finstatement","id":"R_kgDOR5F5hA","diskUsage":122,"primaryLanguage":{"name":"Python","color":"#3572A5"}}}]}}}}
+{
+  "data": {
+    "user": {
+      "name": "Lucas Harada",
+      "bio": "Backend Engineer | Java, Python, SQL, AWS, Google Cloud | POLI-USP",
+      "location": "São Paulo, Brazil",
+      "avatarUrl": "https://avatars.githubusercontent.com/u/121201067?v=4"
+    }
+  }
+}

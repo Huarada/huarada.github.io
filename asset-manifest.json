@@ -1,36 +1,30 @@
 {
   "files": {
-    "main.css": "/static/css/main.3205067f.css",
-    "main.js": "/static/js/main.0eb6ed00.js",
+    "main.css": "/static/css/main.ba847de2.css",
+    "main.js": "/static/js/main.cda856d2.js",
     "static/css/64.bba8fa55.chunk.css": "/static/css/64.bba8fa55.chunk.css",
     "static/js/64.56dc6704.chunk.js": "/static/js/64.56dc6704.chunk.js",
-    "static/css/769.3bd2de1d.chunk.css": "/static/css/769.3bd2de1d.chunk.css",
-    "static/js/769.f930f010.chunk.js": "/static/js/769.f930f010.chunk.js",
-    "static/media/resume.pdf": "/static/media/resume.1334724b2550ef8a58ce.pdf",
-    "static/media/war-logo.png": "/static/media/war-logo.d20ca1c875dbdfffcf91.png",
+    "static/media/googleCloud-transparent.png": "/static/media/googleCloud-transparent.0317c9b1667a5af2bea8.png",
+    "static/media/resume.pdf": "/static/media/resume.ec95a294034d8ab48662.pdf",
+    "static/media/agentforceSpecialist-transparent.png": "/static/media/agentforceSpecialist-transparent.a29f6d1d4f9aab4512fe.png",
     "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
-    "static/media/google_cloud_academy.png": "/static/media/google_cloud_academy.0f58b28680b3c75aea54.png",
-    "static/media/finStatement.png": "/static/media/finStatement.95c8f14ce5cb8d47039d.png",
-    "static/media/acuraciaSarcasmo.png": "/static/media/acuraciaSarcasmo.7daaad4c6ddec19df46c.png",
+    "static/media/profile.jpg": "/static/media/profile.d14b35030d68e3b04d71.jpg",
     "static/media/Agustina.woff": "/static/media/Agustina.eb0c59dda4cc308cba96.woff",
     "static/media/escudoPoliUsp.png": "/static/media/escudoPoliUsp.ac26d1f36ca81935f57c.png",
     "static/media/manOnTable.svg": "/static/media/manOnTable.8f117eb207e57ed8f89d67d595aceb45.svg",
     "static/media/obf.png": "/static/media/obf.b80c5078ddfc271da021.png",
     "static/media/contactMailDark.svg": "/static/media/contactMailDark.1db650d351729a0f17b4e3104e6a7b7a.svg",
     "static/media/developerActivity.svg": "/static/media/developerActivity.2c0445cae86f4243433a2f5a22b2c031.svg",
-    "static/media/agentforceSpecialist.png": "/static/media/agentforceSpecialist.6dc7d7b46cd3d6650bbd.png",
     "static/media/skill.svg": "/static/media/skill.35a147662ab0a1d15e579690446e0258.svg",
     "index.html": "/index.html",
     "static/media/talksCardBack.svg": "/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
-    "main.3205067f.css.map": "/static/css/main.3205067f.css.map",
-    "main.0eb6ed00.js.map": "/static/js/main.0eb6ed00.js.map",
+    "main.ba847de2.css.map": "/static/css/main.ba847de2.css.map",
+    "main.cda856d2.js.map": "/static/js/main.cda856d2.js.map",
     "64.bba8fa55.chunk.css.map": "/static/css/64.bba8fa55.chunk.css.map",
-    "64.56dc6704.chunk.js.map": "/static/js/64.56dc6704.chunk.js.map",
-    "769.3bd2de1d.chunk.css.map": "/static/css/769.3bd2de1d.chunk.css.map",
-    "769.f930f010.chunk.js.map": "/static/js/769.f930f010.chunk.js.map"
+    "64.56dc6704.chunk.js.map": "/static/js/64.56dc6704.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3205067f.css",
-    "static/js/main.0eb6ed00.js"
+    "static/css/main.ba847de2.css",
+    "static/js/main.cda856d2.js"
   ]
 }

@@ -1,1 +1,14 @@
-{"status":"ok","feed":{"url":"https://medium.com/feed/@Lucasharada","title":"Stories by Lucas Harada on Medium","link":"https://medium.com/@lucasharada?source=rss-3bc1fab03701------2","author":"","description":"Stories by Lucas Harada on Medium","image":"https://cdn-images-1.medium.com/fit/c/150/150/0*XMub04izitNt5kHN."},"items":[]}
+{
+  "username": "lucasharada51",
+  "profileUrl": "https://medium.com/@lucasharada51",
+  "fetchedAt": "2026-10-26T15:41:20.441Z",
+  "items": [
+    {
+      "title": "How Fixing One Bug Made Me Question My Entire Architecture — Building an AI Agent for Pokémon VGC",
+      "url": "https://medium.com/@lucasharada51/how-fixing-one-bug-made-me-question-my-entire-architecture-building-an-ai-agent-for-pok%C3%A9mon-vgc-e98f6bcafec8",
+      "description": "I was having a quiet day — playing through my backlog to grow my “completed games” list, catching up on the week’s news — when two headlines caught my attention: a Google-hosted AI hackathon, and the Pokémon World Champ…",
+      "date": "2026-08-31T23:17:32.000Z"
+    }
+  ],
+  "cached": false
+}

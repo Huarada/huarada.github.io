@@ -1,0 +1,81 @@
+BASE DE CONHECIMENTO — LUCAS HARADA
+Revisão: 26/10/2026. Fonte principal: currículo atual vinculado em src/containers/greeting/resume.pdf, conferido na cópia distribuída pelo build. Links dos projetos complementados pelo portfólio.
+O nome legado do arquivo foi mantido por compatibilidade; o conteúdo está atualizado para 2026.
+Cada seção é independente para recuperação local. A linha Busca contém termos de indexação, não novas competências.
+
+## perfil | Perfil profissional e objetivo
+Busca: lucas harada perfil resumo apresentação sobre objetivo carreira backend engineer developer overview about background
+Lucas Harada é desenvolvedor back-end com foco em integração de IA, formado em Engenharia Elétrica pela POLI-USP. Constrói APIs, serviços em nuvem e pipelines com LLMs e agentes, priorizando Clean Architecture, testes automatizados e respostas ancoradas em dados verificáveis. Seu foco profissional é Back-end Engineering com AI Integration e AI Orchestration. Tecnologias centrais: Python, Java, FastAPI, REST APIs, LLMs e Google Cloud.
+
+## contato | Contato e localização
+Busca: contato email telefone linkedin github site localização cidade contact phone location contratar recrutador entrevista
+Nome: Lucas Harada. Localização: São Paulo, SP, Brasil.
+E-mail: lucasharada51@gmail.com. Telefone: +55 (11) 97737-0035.
+LinkedIn: https://www.linkedin.com/in/eng-lucas-harada
+GitHub: https://github.com/Huarada
+Portfólio: https://huarada.github.io
+
+## formacao | Formação acadêmica
+Busca: formação graduação faculdade universidade curso engenharia elétrica poli usp educação education degree university college
+Universidade de São Paulo, Escola Politécnica (POLI-USP), São Paulo, Brasil. Bacharelado em Engenharia Elétrica, com ênfase em Eletrônica e Sistemas Computacionais. Período: janeiro de 2020 a dezembro de 2025. Formação concluída.
+
+## experiencia-analista | Casa dos Ventos — Analista de Tecnologia
+Busca: experiência profissional emprego trabalho casa ventos analista tecnologia cloud run sap chatbot faturas propostas pdf comercial leads qr code whatsapp salesforce resultados impacto experience work employment job analyst
+Casa dos Ventos, São Paulo, SP. Cargo: Analista de Tecnologia, de janeiro de 2026 a outubro de 2026. O vínculo terminou em outubro de 2026; não é emprego atual.
+Desenvolveu serviço back-end em Google Cloud Run integrando o CRM e um gerador de PDFs, reduzindo o tempo operacional do time comercial de 30 minutos para 5 segundos.
+Integrou o chatbot à API do SAP para enviar PDFs de faturas a partir do CNPJ e do número da nota fiscal informados pelo usuário.
+Redesenhou o fluxo do bot para eventos com roteamento por QR code, conectando WhatsApp e Salesforce CRM. O fluxo captou mais de 300 leads qualificados em um único evento.
+
+## experiencia-estagio | Casa dos Ventos — Estágio em Engenharia de Software
+Busca: experiência profissional casa ventos estágio estagiário arquitetura salesforce apex soql triggers modelagem dados comercial experience internship work employment
+Casa dos Ventos, São Paulo, SP. Estágio em Engenharia de Software, de novembro de 2024 a dezembro de 2025. Depois, atuou como Analista de Tecnologia de janeiro a outubro de 2026. Período total na empresa: novembro de 2024 a outubro de 2026.
+Projetou e evoluiu a arquitetura de soluções em Salesforce com separação de responsabilidades e modelagem de dados. Desenvolveu o back-end em Apex e SOQL: classes de serviço, triggers, consultas otimizadas e integrações entre sistemas para automatizar fluxos comerciais.
+
+## projeto-professorvgc | ProfessorVGC — Coach de IA para Pokémon VGC
+Busca: projeto professorvgc professor vgc pokemon coach engine python node ipc adk langchain grounding evidências pydantic benchmark fisher resultados métricas acurácia alucinações open source project accuracy hallucinations
+ProfessorVGC (2026), projeto open source de coaching de IA para Pokémon VGC.
+Engine Python com Clean Architecture, cálculo determinístico em Node.js via IPC e dois estágios de LLM com Google ADK e LangChain. Os estágios são alimentados apenas por evidências tipadas com Pydantic.
+Benchmark com 40 partidas reais: a acurácia das afirmações do LLM passou de 52% sem grounding para 61% com grounding; p = 0,013 no teste exato de Fisher. As afirmações sobre jogadas inexistentes caíram de 87 para 11. Esses resultados se referem a esse benchmark, não a uma garantia geral de ausência de alucinações.
+Repositório: https://github.com/Huarada/professor-VGC
+
+## projeto-vocal | Vocal Stress Co-Pilot — Voice AI Agent
+Busca: projeto vocal stress copilot co pilot voz voice agente entrevistas estruturadas assemblyai hackathon tool calling gateway fastapi websockets cnn grad cam xai áudio acústico explicabilidade project
+Vocal Stress Co-Pilot (2026), Voice AI Agent para entrevistas estruturadas, desenvolvido no Hackathon AssemblyAI.
+Agente de voz em tempo real com AssemblyAI Voice Agent API e tool calling, acompanhado de agente analista via LLM Gateway ancorado nas evidências da sessão. Back-end em FastAPI e WebSockets; pipeline acústico com CNN e Grad-CAM para explicabilidade (XAI). O currículo não informa métricas de desempenho nem resultado de premiação no hackathon.
+Repositório: https://github.com/Huarada/vocal-stress-copilot
+
+## projeto-finstatement | FinStatement — Análise fundamentalista automatizada
+Busca: projeto finstatement fin statement financeiro finanças b3 balanço ri investidor pdf extração pipeline pydantic anchoring análise resultados métricas visualizações views project finance statements
+FinStatement (2026), análise fundamentalista automatizada, com mais de 20 mil visualizações.
+Pipeline Python com Clean Architecture que extrai dados de PDFs da B3, valida os dados com Pydantic e usa LLMs com Data Anchoring para ancorar as análises nos dados extraídos e evitar alucinações. Tempo de análise reduzido de 3 horas para 30 segundos por RI. Esse é o resultado reportado no currículo; não constitui garantia universal de respostas sem erros.
+Repositório: https://github.com/Huarada/finstatement
+
+## certificacoes | Certificações e cursos
+Busca: certificações certificados credenciais cursos google cloud associate engineer ace gcp salesforce agentforce specialist harvard cs50 certificate certification certified credentials courses
+Google Cloud Associate Cloud Engineer (2026).
+Verificação da certificação Google ACE: https://www.credly.com/badges/2ea0ff0a-ae56-4534-abdd-8770d6334add
+Salesforce Agentforce Specialist (2025).
+Introduction to Computer Science (CS50), Harvard (2023).
+A certificação Google atual em destaque é Associate Cloud Engineer; não confundir com o curso introdutório Google Cloud Computing Foundations Academy do currículo antigo.
+
+## habilidades-backend | Linguagens e engenharia back-end
+Busca: habilidades competências stack tecnologias linguagens programação backend python java sql apex soql javascript cpp c++ fastapi rest api websockets pydantic arquitetura pytest testes skills languages programming testing
+Linguagens: Python, Java, SQL, Apex, SOQL, JavaScript e C/C++.
+Back-end: FastAPI, REST APIs, WebSockets, Pydantic, Clean Architecture e testes automatizados com pytest. A experiência profissional inclui serviços, triggers, consultas otimizadas e integrações entre sistemas em Apex e SOQL. O currículo não atribui percentuais de domínio nem anos específicos de experiência a cada tecnologia.
+
+## habilidades-ia | Integração e orquestração de IA
+Busca: habilidades competências inteligência artificial integração orquestração ia ai llm llms agentes agent agents integration orchestration tool calling rag grounding openai gemini google adk langchain voice deep learning skills
+LLMs com OpenAI e Gemini; Google ADK; LangChain; tool calling; RAG; Voice Agents; Deep Learning.
+Aplicação demonstrada: dois estágios de LLM alimentados por evidências tipadas no ProfessorVGC; agente de voz com tool calling e agente analista ancorado na sessão no Vocal Stress Co-Pilot; Data Anchoring no FinStatement. O foco é integrar modelos a ferramentas, serviços e dados verificáveis, com arquitetura back-end e avaliação de resultados.
+
+## habilidades-cloud | Cloud e DevOps
+Busca: habilidades cloud nuvem devops deploy implantação google gcp cloud run firestore aws git infraestrutura skills deployment
+Google Cloud, incluindo Cloud Run e Firestore; AWS; Git. Experiência profissional com serviço back-end em Cloud Run para integrar CRM e geração de PDFs. Certificação Google Cloud Associate Cloud Engineer (2026).
+
+## idiomas | Idiomas
+Busca: idiomas inglês português fluência fluente c1 languages english portuguese fluent
+Inglês fluente (C1). Português nativo.
+
+## limites | Informações não fornecidas no currículo atual
+Busca: salário pretensão salarial disponibilidade contratação idade nascimento estado civil endereço dados pessoais salary availability age birthday married
+O currículo atual não informa pretensão salarial, disponibilidade para início, idade, data de nascimento, estado civil ou endereço residencial completo. Não inferir essas informações. Para negociação e disponibilidade, orientar contato direto com Lucas.
